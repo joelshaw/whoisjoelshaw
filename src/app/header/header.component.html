@@ -1,5 +1,5 @@
 <header id="header">
-  <section class="header-introduction">
+  <section class="header-introduction" [@showIntro]="isShown ? 'hide' : 'show'">
     <h1>{{title}}</h1>
     <h2>{{subtitle}}</h2>
   </section>
