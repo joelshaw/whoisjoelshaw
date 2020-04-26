@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './styles/colors';
 @import './styles/fonts';
+@import './styles/mixins';
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -13,3 +14,9 @@ body {
   background: $charcoal;
   font-family: $font-primary;
 }
+
+@include mq(mobile) {
+  body {
+    display: none;
+  }
+};
