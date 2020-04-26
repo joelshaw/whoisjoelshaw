@@ -14,9 +14,3 @@ body {
   background: $charcoal;
   font-family: $font-primary;
 }
-
-@include mq(mobile) {
-  body {
-    display: none;
-  }
-};

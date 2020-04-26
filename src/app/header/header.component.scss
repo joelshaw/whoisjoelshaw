@@ -1,4 +1,5 @@
 @import '../../styles/colors';
+@import '../../styles/mixins';
 
 #header {
   display: flex;
@@ -12,6 +13,14 @@
   color: $white;
   width: 100vw;
   height: 100vh;
+
+  @include mq(tablet) {
+    background-position: -290px 0;
+  }
+
+  @include mq(mobile) {
+    background-position: -290px 0;
+  }
 
   .header-introduction {
     display: flex;
@@ -55,6 +64,5 @@
     width: 100%;
     height: 100%;
   }
-
 
 }
