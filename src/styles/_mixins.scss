@@ -1,0 +1,11 @@
+@mixin mq($bp) {
+  @if $bp == desktop {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $bp == tablet {
+      @media (max-width: 1250px) { @content; }
+  }
+  @else if $bp == mobile {
+      @media (max-width: 600px) { @content; }
+  }
+}

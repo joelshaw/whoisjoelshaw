@@ -1,0 +1,78 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+#header {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  background: url('../../assets/profile.jpg') no-repeat;
+  background-size: cover;
+  background-position: -290px -100px;
+  justify-content: flex-end;
+  align-items: center;
+  color: $white;
+  width: 100vw;
+  height: 100vh;
+
+  @include mq(tablet) {
+    background-position: -290px 0;
+  }
+
+  @include mq(mobile) {
+    background-position: -290px 0;
+  }
+
+  .header-introduction {
+    display: flex;
+    position: relative;
+    text-align: right;
+    justify-content: flex-end;
+    align-content: center;
+    margin: 0 10% 0 0;
+    flex-wrap: wrap;
+    max-width: 550px;
+    z-index: 5;
+    height: 200px;
+    font-weight: 100;
+
+    h1 {
+      display: flex;
+      text-transform: uppercase;
+      justify-content: flex-end;
+      margin: 0;
+      letter-spacing: 4px;
+      font-weight: 200;
+      font-size: 3.5em;
+      flex-grow: 1;
+      flex-basis: 100%;
+
+      @include mq(mobile) {
+        font-size: 2.25em;
+        justify-content: center;
+      }
+
+    }
+
+    h2 {
+      margin: 0;
+      font-style: italic;
+      font-weight: 100;
+      text-transform: lowercase;
+      margin-right: 0.5em;
+
+      @include mq(mobile) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(115deg, rgba($charcoal, 0.5) 0%, rgba($charcoal, 1) 65%, rgba($charcoal, 1) 100%);
+    width: 100%;
+    height: 100%;
+  }
+
+}
