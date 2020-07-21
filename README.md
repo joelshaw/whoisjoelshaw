@@ -1,2 +1,3 @@
-# Joel Shaw
-Angular Portfolio Application
+# Joel I. Shaw
+
+Front End Software Engineer - Richmond, VA
