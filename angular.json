@@ -117,8 +117,13 @@
               "devServerTarget": "joelshaw-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "joelshaw-app"
 }
