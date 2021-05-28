@@ -1,0 +1,22 @@
+{
+  "name": "joelshaw",
+  "version": "2.0.0",
+  "description": "Joel Shaw - Software Engineer + Photographer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelshaw/whoisjoelshaw.git"
+  },
+  "author": "Joel Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelshaw/whoisjoelshaw/issues"
+  },
+  "homepage": "https://github.com/joelshaw/whoisjoelshaw#readme",
+  "dependencies": {
+    "@vue/cli": "^4.5.13"
+  }
+}
