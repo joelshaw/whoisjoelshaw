@@ -38,7 +38,7 @@ export default {
   }
 
   .introduction h1:after {
-display: block;
+    display: block;
     content: '';
     width: 30%;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
