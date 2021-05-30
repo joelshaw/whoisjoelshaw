@@ -62,4 +62,18 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media only screen and (max-width: 720px) {
+    .introduction h1 {
+      font-size: 2em;
+    }
+
+    .introduction h1:after {
+      top: 20px;
+    }
+
+    .introduction h2 {
+      font-size: 1em;
+    }
+  }
 </style>
