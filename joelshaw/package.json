@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "merge": "2.1.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "ws": "7.4.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
