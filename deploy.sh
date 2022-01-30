@@ -15,14 +15,10 @@ cd dist
 
 echo 'whoisjoelshaw.com' > CNAME
 
-mv . ..
+git  ../
 
-git checkout gh-pages
+git add .
+git commit -m "Deployed on $now"
+git subtree push --prefix dist origin gh-pages
 
-mv ../dist .
-
-# git checkout gh-pages
-# git add -A
-# git commit -m 'Deployed on $now'
-# git push origin gh-pages
 cd -
