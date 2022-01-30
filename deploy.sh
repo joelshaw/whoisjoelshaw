@@ -5,7 +5,7 @@ set -e
 cd joelshaw
 
 # checkout latest merged
-git checkout master
+# git checkout master
 
 # build
 npm run build
