@@ -17,5 +17,5 @@ echo 'whoisjoelshaw.com' > CNAME
 git checkout gh-pages
 git add -A
 git commit -m 'Deployed on $now'
-git push -f joelshaw@github.com:joelshaw/whoisjoelshaw.git master:gh-pages
+git push origin gh-pages
 cd -
