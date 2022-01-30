@@ -11,12 +11,13 @@ git checkout master
 npm run build
 
 cd dist
-# if you are deploying to a custom domain
 
+# create CNAME file
 echo 'whoisjoelshaw.com' > CNAME
 
-git  ../
+cd  ../
 
+# git actions
 git add .
 git commit -m "Deployed on $now"
 git subtree push --prefix dist origin gh-pages
