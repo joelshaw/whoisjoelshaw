@@ -14,8 +14,15 @@ cd dist
 # if you are deploying to a custom domain
 
 echo 'whoisjoelshaw.com' > CNAME
+
+mv . ..
+
 git checkout gh-pages
-git add -A
-git commit -m 'Deployed on $now'
-git push origin gh-pages
+
+mv ../dist .
+
+# git checkout gh-pages
+# git add -A
+# git commit -m 'Deployed on $now'
+# git push origin gh-pages
 cd -
