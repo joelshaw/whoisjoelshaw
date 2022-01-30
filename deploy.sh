@@ -18,6 +18,7 @@ echo 'whoisjoelshaw.com' > CNAME
 cd  ../
 
 # git actions
+git checkout -b deploy-$now
 git add .
 git commit -m "Deployed on $now"
 git subtree push --prefix dist origin gh-pages
