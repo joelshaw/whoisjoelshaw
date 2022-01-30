@@ -3,24 +3,15 @@
 set -e
 
 cd joelshaw
-
-# checkout latest merged
-# git checkout master
-
 # build
 npm run build
 
 cd dist
+# if you are deploying to a custom domain
 
-# create CNAME file
 echo 'whoisjoelshaw.com' > CNAME
-
-cd  ../
-
-# git actions
-git checkout -b deploy-$now
-git add .
-git commit -m "Deployed on $now"
-git subtree push --prefix dist origin gh-pages
-
+git checkout gh-pages
+git add -A
+git commit -m 'Deployed on $now'
+git push -f joelshaw@github.com:joelshaw/whoisjoelshaw.git master:gh-pages
 cd -
